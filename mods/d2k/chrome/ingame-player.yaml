@@ -25,6 +25,20 @@ Container@PLAYER_WIDGETS:
 					HoldText: supportpowers-support-powers-palette.hold
 					HotkeyPrefix: SupportPower
 					HotkeyCount: 6
+		Background@STATUS_BAR_BACKGROUND:
+			X: 0
+			Y: WINDOW_HEIGHT - HEIGHT
+			Background: dialog4
+			Width: 451
+			Height: 180
+			ClickThrough: False
+			Children:
+				Label@STATUS_BAR_TEXT:
+					X: 2
+					Y: 30
+					Width: 50
+					Height: 25					
+					Logic: StatusBarLabelLogic
 		Image@COMMAND_BAR_BACKGROUND:
 			X: 0
 			Y: WINDOW_HEIGHT - HEIGHT - 180
