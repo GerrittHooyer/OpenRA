@@ -34,7 +34,7 @@ Container@PLAYER_WIDGETS:
 			ClickThrough: False
 			Children:
 				Label@STATUS_BAR_TEXT:
-					X: 2
+					X: 15
 					Y: 30
 					Width: 50
 					Height: 25					
