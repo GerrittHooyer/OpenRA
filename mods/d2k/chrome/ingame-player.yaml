@@ -26,22 +26,28 @@ Container@PLAYER_WIDGETS:
 					HotkeyPrefix: SupportPower
 					HotkeyCount: 6
 		Background@STATUS_BAR_BACKGROUND:
-			X: 0
-			Y: WINDOW_HEIGHT - HEIGHT
-			Background: dialog4
-			Width: 451
+			X: 5
+			Y: WINDOW_HEIGHT - HEIGHT - 43
+			Background: dialog3
+			Width: 444
 			Height: 180
 			ClickThrough: False
 			Children:
-				Label@STATUS_BAR_TEXT:
-					X: 15
-					Y: 30
-					Width: 50
-					Height: 25					
-					Logic: StatusBarLabelLogic
+				Container@STATUS_BAR_ITEMS:
+					X: 20
+					Y: 20
+					Width: 444
+					Height: 180
+					Logic: StatusBarItemsPanelLogic
+					Children:
+						GradientColorBlock@PLAYER_GRADIENT:
+							X: 0
+							Y: 0
+							Width: 0
+							Height: PARENT_HEIGHT
 		Image@COMMAND_BAR_BACKGROUND:
 			X: 0
-			Y: WINDOW_HEIGHT - HEIGHT - 180
+			Y: WINDOW_HEIGHT - HEIGHT
 			Width: 451
 			Height: 43
 			ImageCollection: commandbar
@@ -50,7 +56,7 @@ Container@PLAYER_WIDGETS:
 		Container@COMMAND_BAR:
 			Logic: CommandBarLogic
 			X: 24
-			Y: WINDOW_HEIGHT - HEIGHT - 180 - 9
+			Y: WINDOW_HEIGHT - HEIGHT - 9
 			Width: 275
 			Height: 41
 			Children:
@@ -197,7 +203,7 @@ Container@PLAYER_WIDGETS:
 		Container@STANCE_BAR:
 			Logic: StanceSelectorLogic
 			X: 316
-			Y: WINDOW_HEIGHT - HEIGHT - 180 - 11
+			Y: WINDOW_HEIGHT - HEIGHT - 11
 			Width: 138
 			Height: 26
 			Children:

@@ -20,7 +20,7 @@ namespace OpenRA.Mods.Common.Widgets
 	{
 		public readonly int DisplayDurationMs = 0;
 		public readonly int ItemSpacing = 4;
-		public readonly int BottomSpacing = 0;
+		public readonly int BottomSpacing = 240;
 		public readonly int LogLength = 8;
 		public readonly bool HideOverflow = true;
 

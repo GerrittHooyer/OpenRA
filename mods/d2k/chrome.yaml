@@ -244,6 +244,11 @@ dialog5:
 	Regions:
 		background: 1, 1, 478, 478
 
+status-bar:
+	Inherits: ^Dialog
+	PanelRegion: 641, 1, 1, 1, 52, 52, 1, 1
+
+
 lobby-bits:
 	Inherits: ^Glyphs
 	Regions:
